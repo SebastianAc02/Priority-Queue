@@ -1,0 +1,24 @@
+Access: Since PQ doesn't need direct accessing, sequential accessing is good (have to iterating through items to check for priority level anyway)
+Search: No need for direct searching, O(1)
+Insertion: requires direct inserting
+Deletion: only need to delete from one end, O(1) 
+
+Reason: due to the ability to delete & insert item in O(1); prioritized speed over memory
+
+Comparision: 
+- Linked: 
+	+ Access: sequential
+	+ Search: sequential
+	+ Insert: 0(1)
+	+ Delete: 0(1)
+	% Wasted: 0
+	% Overhd: 4n + (pointer*3)*4 = O(n)
+-----------------------------------------------
+- Array-based:
+	+ Access: direct
+	+ Search: sequantial
+	+ Insert: O(n)
+	+ Delete: 0(n)
+	% Wasted: O(1)
+	% Overhd: pointer*4 + level-pointer*9*4 = O(1)
+

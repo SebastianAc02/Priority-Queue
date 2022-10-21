@@ -1,0 +1,17 @@
+2022-10-20 19:46:18 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-20 19:46:18 info: Extraction complete for source: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-20 19:46:18 info: Congratulations, your extension "Embold" is now active!
+2022-10-20 19:52:55 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/PriorityQ.exe
+2022-10-20 19:52:55 error: SQLITE_ERROR: no such table: issues
+2022-10-20 20:47:56 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/PriotiyQ
+2022-10-20 20:47:56 error: SQLITE_ERROR: no such table: issues
+2022-10-20 22:48:56 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
+2022-10-20 22:48:56 error: SQLITE_ERROR: no such table: issues
+2022-10-20 23:01:34 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git
+2022-10-20 23:01:34 error: SQLITE_ERROR: no such table: issues
+2022-10-20 23:02:40 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
+2022-10-20 23:02:40 error: SQLITE_ERROR: no such table: issues
+2022-10-20 23:09:08 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
+2022-10-20 23:09:08 error: SQLITE_ERROR: no such table: issues
+2022-10-20 23:11:02 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/CMPT-2300-Lab2---PriorityQ
+2022-10-20 23:11:02 error: SQLITE_ERROR: no such table: issues
