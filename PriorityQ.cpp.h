@@ -1,6 +1,8 @@
 #include "PriorityQ.hpp"
 #include <iostream>
 
+using namespace std;
+
 template<typename T>
 PriorityQ<T>::PriorityQ()
 {
@@ -27,6 +29,30 @@ void PriorityQ<T>::enqueue(const T& element, const int lv)
         back = back->next;
     }
     size++;
+}
+template <typename T>
+T PriorityQ<T>::dequeue() {
+    if (isEmpty()) {
+        throw runtime_error("Queue is empty");
+    }
+    else {
+        Node<T>* temp = front;
+        front = front->next;
+
+        T element = temp->element;
+        delete temp;
+        temp = nullptr;
+        size--;
+        return element;
+    }
+}
+template <typename T>
+bool PriorityQ<T>::isEmpty() {
+    if (front = back=nullptr)
+        return true;
+    else
+        return false;
+
 }
 
 

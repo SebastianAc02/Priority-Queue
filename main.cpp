@@ -19,7 +19,7 @@ int main()
     newQueu.enqueue('c', 2);
     
      char x = newQueu.peek();
-    
+   
     std::cout << x;
    
     newQueu.enqueue('p', 1);

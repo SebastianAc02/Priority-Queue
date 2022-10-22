@@ -36,6 +36,7 @@ private:
     int size;
     int lv = 0;
     void clear();
+    bool isEmpty();
     Node<T>* lvOne;
     Node<T>* lvTwo;
     Node<T>* lvThree;

@@ -127,10 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="PriorityQ.cpp.h" />
     <ClInclude Include="PriorityQ.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PriorityQ.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
