@@ -13,6 +13,7 @@
 int main()
 {
    
+   std::cout << "hi this is a test ":
     PriorityQ<char> newQueu;
     
   
