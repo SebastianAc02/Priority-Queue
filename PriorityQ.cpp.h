@@ -48,7 +48,7 @@ T PriorityQ<T>::dequeue() {
 }
 template <typename T>
 bool PriorityQ<T>::isEmpty() {
-    if (front = back=nullptr)
+    if (front == nullptr && back == nullptr )
         return true;
     else
         return false;
@@ -71,6 +71,7 @@ T PriorityQ<T>::peek(){
         return front -> element ;
     else
         return 0;
+ 
 
 }
 
