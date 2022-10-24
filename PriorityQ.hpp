@@ -17,6 +17,11 @@ public:
 		this->element = element;
 		next = nullptr;
 	}
+	 ~Node(){
+        if ( next != nullptr)
+        {
+            delete next;
+        }
 };
 
 template <typename T>
