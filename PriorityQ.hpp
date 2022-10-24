@@ -17,10 +17,11 @@ public:
 		this->element = element;
 		next = nullptr;
 	}
-	 ~Node(){
+	~Node(){
         if ( next != nullptr)
         {
             delete next;
+            next = nullptr;
         }
 };
 
