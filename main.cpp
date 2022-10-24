@@ -9,24 +9,27 @@
 
 #include "PriorityQ.hpp"
 
-
 int main()
 {
    
-    PriorityQ<char> newQueu;
-    
+   PriorityQ<char> newQueu;
+  
+
+   
   
     newQueu.enqueue('c', 2);
-    newQueu.dequeue();
-     char x = newQueu.peek();
+    //newQueu.dequeue();
+    // char x = newQueu.peek();
+ 
+  
+    ////std::cout << x;
    
+    //newQueu.enqueue('p', 1);
+    //
+    //x = newQueu.peek();
+    //
+    //std::cout << x;
    
-    std::cout << x;
-   
-    newQueu.enqueue('p', 1);
     
-    x = newQueu.peek();
-    
-    std::cout << x;
     
 }
