@@ -4,40 +4,22 @@
 template<typename T>
 PriorityQ<T>::PriorityQ()
 {
-	head_lvOne = head_lvTwo = head_lvThree = head_lvFour = head_lvFive = head_lvSix = head_lvSeven = head_lvEight = head_lvNine = head_lvTen = nullptr;
-	tail_lvOne = tail_lvTwo = tail_lvThree = tail_lvFour = tail_lvFive = tail_lvSix = tail_lvSeven = tail_lvEight = tail_lvNine = tail_lvTen = nullptr;
-
-	//Highest priority is level 10
-	head_MultilevelQ[9] = head_lvOne;
-	head_MultilevelQ[8] = head_lvTwo;
-	head_MultilevelQ[7] = head_lvThree;
-	head_MultilevelQ[6] = head_lvFour;
-	head_MultilevelQ[5] = head_lvFive;
-	head_MultilevelQ[4] = head_lvSix;
-	head_MultilevelQ[3] = head_lvSeven;
-	head_MultilevelQ[2] = head_lvEight;
-	head_MultilevelQ[1] = head_lvNine;
-	head_MultilevelQ[0] = head_lvTen;
-
-
-	tail_MultilevelQ[9] = tail_lvOne;
-	tail_MultilevelQ[8] = tail_lvTwo;
-	tail_MultilevelQ[7] = tail_lvThree;
-	tail_MultilevelQ[6] = tail_lvFour;
-	tail_MultilevelQ[5] = tail_lvFive;
-	tail_MultilevelQ[4] = tail_lvSix;
-	tail_MultilevelQ[3] = tail_lvSeven;
-	tail_MultilevelQ[2] = tail_lvEight;
-	tail_MultilevelQ[1] = tail_lvNine;
-	tail_MultilevelQ[0] = tail_lvTen;
-
+	for (int i = 0; i < 10; i++)
+	{
+		head_MultilevelQ[i] = nullptr;
+		tail_MultilevelQ[i] = nullptr;
+	}
 }
 
 
 template<typename T>
 PriorityQ<T>::~PriorityQ()
 {
-
+	for (int i = 0; i < 10; i++)
+	{
+		delete head_MultilevelQ[i] = nullptr;
+		delete tail_MultilevelQ[i] = nullptr;
+	}
 }
 
 template<typename T>
