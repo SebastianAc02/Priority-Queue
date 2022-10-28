@@ -15,11 +15,14 @@ PriorityQ<T>::PriorityQ()
 template<typename T>
 PriorityQ<T>::~PriorityQ()
 {
+
 	for (int i = 0; i < 10; i++)
 	{
-		delete head_MultilevelQ[i] = nullptr;
-		delete tail_MultilevelQ[i] = nullptr;
+		delete head_MultilevelQ[i];
+		delete tail_MultilevelQ[i];
+
 	}
+
 }
 
 template<typename T>
