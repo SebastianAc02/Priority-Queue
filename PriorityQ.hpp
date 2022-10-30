@@ -1,55 +1,74 @@
 #ifndef PRIORITY_Q_hpp
 #define PRIORITY_Q_hpp
+#include <iostream>
+
+const int MAX_NUM_OF_LEVEL = 10;
+using namespace std;
 
 template <typename T>
 class Node
 {
 public:
-    T element;
-    Node<T>* next;
+	T element;
+	Node<T>* next;
 
-    Node() {
-        next = nullptr;
-    }
+	Node() {
+		next = nullptr;
+	}
 
-    Node(const T& element)
-    {
-        this->element = element;
-        next = nullptr;
-    }
+	Node(const T& element)
+	{
+		this->element = element;
+		next = nullptr;
+	}
+
+	~Node()
+	{
+		if (next != nullptr)
+		{
+			delete next;
+			next = nullptr;
+		}
+	}
+
 };
+
+
 
 template <typename T>
 class PriorityQ
 {
 public:
-    PriorityQ();
-    ~PriorityQ();
+	PriorityQ();
+	virtual ~PriorityQ();
+	PriorityQ(const PriorityQ<T>& anotherQ);
+	PriorityQ(PriorityQ<T>&& anotherQ);
 
-    void enqueue(const T& item, const int lv) ;
-    T dequeue();
-    int getSize() const;
-    T peek();
+
+	void enqueue(const T& item, const int lv);
+	T dequeue();
+	T peek() const;
+
+	PriorityQ<T>& operator= (const PriorityQ<T>& anotherQ);
+	PriorityQ<T>& operator= (const PriorityQ<T>&& anotherQ);
+
+	static Node<T> copy(Node<T>* head, Node<T>*& tail);
+	void clear();
+
+
+	/* to_be_implemented
+	* operator= & move operator=
+	* Copy & Move constructors
+	*/
+
 private:
-    Node<T>* front;
-    Node<T>* back;
-    int size;
-    int lv = 0;
-    void clear();
-    bool isEmpty();
-    Node<T>* lvOne;
-    Node<T>* lvTwo;
-    Node<T>* lvThree;
-    Node<T>* lvFour;
-    Node<T>* lvFive;
-    Node<T>* lvSix;
-    Node<T>* lvSeven;
-    Node<T>* lvEight;
-    Node<T>* lvNine;
-    Node<T>* lvTen;
 
+	bool is_MultilevelQ_empty();
+	bool is_levelQ_empty(int lv);
+
+	Node<T>* head_MultilevelQ[MAX_NUM_OF_LEVEL];
+	Node<T>* tail_MultilevelQ[MAX_NUM_OF_LEVEL];
 };
-
 
 #include "PriorityQ.cpp.h"
 #endif
