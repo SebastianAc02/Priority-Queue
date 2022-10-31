@@ -1,25 +1,45 @@
-2022-10-20 19:46:18 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
-2022-10-20 19:46:18 info: Extraction complete for source: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
-2022-10-20 19:46:18 info: Congratulations, your extension "Embold" is now active!
-2022-10-20 19:52:55 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/PriorityQ.exe
-2022-10-20 19:52:55 error: SQLITE_ERROR: no such table: issues
-2022-10-20 20:47:56 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/PriotiyQ
-2022-10-20 20:47:56 error: SQLITE_ERROR: no such table: issues
-2022-10-20 22:48:56 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
-2022-10-20 22:48:56 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:01:34 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git
-2022-10-20 23:01:34 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:02:40 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
-2022-10-20 23:02:40 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:09:08 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
-2022-10-20 23:09:08 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:11:02 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/CMPT-2300-Lab2---PriorityQ
-2022-10-20 23:11:02 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:11:12 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
-2022-10-20 23:11:12 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:12:41 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git
-2022-10-20 23:12:41 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:12:53 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/README.md
-2022-10-20 23:12:53 error: SQLITE_ERROR: no such table: issues
-2022-10-20 23:13:16 info: file:///c%3A/Users/meode/OneDrive/Documents/School/Data%20Structure%20-%20CMPT%202300/Ass%2C%20Labs/Assignment%202%20-%20ADTs/.git/index.lock
-2022-10-20 23:13:16 error: SQLITE_ERROR: no such table: issues
+2022-10-26 15:34:04 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-26 15:34:04 info: Extraction complete for source: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-26 15:34:04 info: Congratulations, your extension "Embold" is now active!
+2022-10-26 16:11:29 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/771f214f-4dc8-4f44-b853-c14e6b3df373.vsidx
+2022-10-26 16:11:29 error: SQLITE_ERROR: no such table: issues
+2022-10-29 21:45:19 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-29 21:45:19 info: Extraction complete for source: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-29 21:45:19 info: Congratulations, your extension "Embold" is now active!
+2022-10-30 00:14:38 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/PriorityQ.cpp
+2022-10-30 00:14:38 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:18:42 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/main.exe
+2022-10-30 00:18:42 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:20:08 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/main.exe
+2022-10-30 00:20:08 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:20:41 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/main.exe
+2022-10-30 00:20:41 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:21:25 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/main.exe
+2022-10-30 00:21:25 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:22:37 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/main.exe
+2022-10-30 00:22:37 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:28 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/slnx.sqlite-journal
+2022-10-30 00:23:28 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:32 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/merges/1f0c1e9d-3499-458f-9c78-c245610c8b09.vsidx
+2022-10-30 00:23:32 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:32 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/write.lock
+2022-10-30 00:23:32 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/98f74a1a-3715-4315-827d-541af2ad1955.vsidx
+2022-10-30 00:23:32 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/ce62b414-b7ae-434b-878f-c31a007fd436.vsidx
+2022-10-30 00:23:32 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/merges/7fb6ad75-7b5d-47a3-a543-a4d958dc42df.vsidx
+2022-10-30 00:23:32 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:32 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:32 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:32 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:37 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/slnx.sqlite-journal
+2022-10-30 00:23:37 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:23:39 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/v17/ipch/AutoPCH/7f8a009f10696e33/PRIORITYQ.CPP.ipch
+2022-10-30 00:23:39 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:24:04 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/write.lock
+2022-10-30 00:24:04 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/5d958709-4a80-4725-9aef-f0ce44882786.vsidx
+2022-10-30 00:24:04 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/merges/10f7c4b9-28ff-4efc-95b7-e44df946e67c.vsidx
+2022-10-30 00:24:04 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.vs/Lab2_ADTs/FileContentIndex/merges/c9883231-a2a3-4dae-b291-e5edd58dece5.vsidx
+2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
+2022-10-30 00:29:47 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
