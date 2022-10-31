@@ -1,15 +1,2 @@
 ﻿  main.cpp
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\PriorityQ.cpp.h(103,1): error C2662: 'bool PriorityQ<int>::is_MultilevelQ_empty(void)': cannot convert 'this' pointer from 'const PriorityQ<int>' to 'PriorityQ<int> &'
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\PriorityQ.cpp.h(103,6): message : Conversion loses qualifiers
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\PriorityQ.hpp(66,7): message : see declaration of 'PriorityQ<int>::is_MultilevelQ_empty'
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\PriorityQ.cpp.h(101): message : while compiling class template member function 'T PriorityQ<T>::peek(void) const'
-          with
-          [
-              T=int
-          ]
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\main.cpp(22): message : see reference to function template instantiation 'T PriorityQ<T>::peek(void) const' being compiled
-          with
-          [
-              T=int
-          ]
-C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\main.cpp(9): message : see reference to class template instantiation 'PriorityQ<int>' being compiled
+  Assignment 2 - ADTs.vcxproj -> C:\Users\ansnu\source\repos\CMPT2300 Lab2\Priority-Queue\x64\Debug\Assignment 2 - ADTs.exe

@@ -47,12 +47,12 @@ public:
 
 	void enqueue(const T& item, const int lv);
 	T dequeue();
-	T peek() const;
+	T peek();
 
 	PriorityQ<T>& operator= (const PriorityQ<T>& anotherQ);
-	PriorityQ<T>& operator= (const PriorityQ<T>&& anotherQ);
+	PriorityQ<T>& operator= (PriorityQ<T>&& anotherQ);
 
-	static Node<T> copy(Node<T>* head, Node<T>*& tail);
+	static Node<T>* copy(Node<T>* head, Node<T>* tail);
 	void clear();
 
 
