@@ -24,10 +24,10 @@ public:
 
 	~Node()
 	{
-		if(next != nullptr)
+		if (next != nullptr)
 		{
-		   delete next;
-		   next = nullptr;
+			delete next;
+			next = nullptr;
 		}
 	}
 
@@ -43,28 +43,25 @@ public:
 	virtual ~PriorityQ();
 	PriorityQ(const PriorityQ<T>& anotherQ);
 	PriorityQ(PriorityQ<T>&& anotherQ);
-	
+
 
 	void enqueue(const T& item, const int lv);
 	T dequeue();
-	T peek() const;
+	T peek();
 
 	PriorityQ<T>& operator= (const PriorityQ<T>& anotherQ);
-	PriorityQ<T>& operator= (const PriorityQ<T>&& anotherQ);
+	PriorityQ<T>& operator= (PriorityQ<T>&& anotherQ);
 
-	static Node<T> copy(Node<T>* head, Node<T>*& tail);
+	static Node<T>* copy(Node<T>* head, Node<T>* tail);
 	void clear();
-		
 
-	/* to_be_implemented
-	* operator= & move operator=
-	* Copy & Move constructors
-	*/
+
+
 
 private:
-	
+
 	bool is_MultilevelQ_empty();
-	bool is_levelQ_empty(int lv);
+
 
 	Node<T>* head_MultilevelQ[MAX_NUM_OF_LEVEL];
 	Node<T>* tail_MultilevelQ[MAX_NUM_OF_LEVEL];

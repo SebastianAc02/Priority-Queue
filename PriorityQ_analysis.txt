@@ -1,0 +1,43 @@
+Access: Since PQ doesn't need direct accessing, sequential accessing is good (have to iterate through items to check for priority level anyway)
+Search: No need for direct searching, O(1)
+Insertion: requires direct inserting
+Deletion: only need to delete from one end, O(1) 
+
+Reason: due to the ability to delete & insert item in O(1); prioritized speed over memory
+
+Comparision: 
+- Linked: 
+	+ Enqueue				|   O(1)
+	+ Dequeue	                      	|   O(1)
+	+ Peek	                      		|   O(1)
+	+ is_MultilevelQ_empty() 	        |   O(1)
+    	+ clear():                              |   O(1)
+    	+ Copy Constructor:                     |   O(1)
+    	+ Assignment Operator:                  |   O(1)
+    	+ Move Constructor:                     |   O(1)
+    	+ Move Assignment Operator:             |   O(1)
+	% Wasted: 0                             |   O(1)
+	% Overhead: (n + 10*3)*4-bytes          |   O(n)
+        	3: for head + tail + tail->next
+    % Space Complexity: 
+        Overhead + Wasted = 
+            (n + 10*3)*4-bytes + 0 = 
+                (n + 10*3)*4-bytes          	|   O(n)
+    
+-----------------------------------------------------
+- Array-based: (dynamic)
+    	+ Enqueue:                              |   O(n)
+	+ Dequeue:                              |   O(n)
+	+ Peek:                                 |   O(1)
+	+ is_MultilevelQ_empty():               |   O(1)
+    	+ clear():                              |   O(1)
+    	+ Copy Constructor:                     |   O(1)
+    	+ Assignment Operator:                  |   O(1)
+    	+ Move Constructor:                     |   O(1)
+    	+ Move Assignment Operator:             |   O(1)
+	% Wasted                                |   O(1)    (amortized)
+	% Overhead: (10*2)*4-bytes              |   O(1)
+        	2: pointer to each level + size of each queue
+    % Space Complexity: 
+         Overhead + Wasted = 
+            (10*2)*4-bytes + constant =     	|   O(n)

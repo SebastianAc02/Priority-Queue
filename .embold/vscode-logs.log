@@ -43,3 +43,10 @@
 2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
 2022-10-30 00:24:04 error: SQLITE_ERROR: no such table: issues
 2022-10-30 00:29:47 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-30 21:58:27 info: tempDirectory:c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-30 21:58:27 info: Extraction complete for source: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\meode\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-30 21:58:27 info: Congratulations, your extension "Embold" is now active!
+2022-10-30 21:59:52 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/ProrityQ_analysis
+2022-10-30 21:59:52 error: SQLITE_ERROR: no such table: issues
+2022-10-30 22:04:52 info: file:///d%3A/school/Data%20Structure%20-%20CMPT%202300/Ass%20%26%20Labs/Lab2_ADTs/.PriorityQ_analysis.txt.swp
+2022-10-30 22:04:52 error: SQLITE_ERROR: no such table: issues

@@ -3,7 +3,7 @@
 template<typename T>
 PriorityQ<T>::PriorityQ()
 {
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < MAX_NUM_OF_LEVEL; i++)
 	{
 		head_MultilevelQ[i] = nullptr;
 		tail_MultilevelQ[i] = nullptr;
@@ -27,6 +27,9 @@ PriorityQ<T>::PriorityQ(PriorityQ<T>&& anotherQ)
 	{
 		head_MultilevelQ[i] = anotherQ.head_MultilevelQ[i];
 		tail_MultilevelQ[i] = anotherQ.tail_MultilevelQ[i];
+
+		anotherQ.head_MultilevelQ[i] = nullptr;
+		anotherQ.tail_MultilevelQ[i] = nullptr;
 	}
 }
 
@@ -34,7 +37,7 @@ PriorityQ<T>::PriorityQ(PriorityQ<T>&& anotherQ)
 template<typename T>
 PriorityQ<T>::~PriorityQ()
 {
-    clear();
+	clear();
 }
 
 
@@ -43,14 +46,14 @@ void PriorityQ<T>::enqueue(const T& element, const int lv)
 {
 	if (lv < 1 || lv > 10)
 		throw out_of_range("Priority lv must be between [1, 10]");
-
-	if (head_MultilevelQ[lv - 1] == nullptr)
+	if (head_MultilevelQ[lv - 1] == nullptr)	//if Q is empty
 		head_MultilevelQ[lv - 1] = new Node<T>(element);
 	else {
 		tail_MultilevelQ[lv - 1]->next = new Node<T>(element);
 		tail_MultilevelQ[lv - 1] = tail_MultilevelQ[lv - 1]->next;
 	}
 }
+
 
 template <typename T>
 T PriorityQ<T>::dequeue() {
@@ -59,7 +62,7 @@ T PriorityQ<T>::dequeue() {
 	}
 
 	//check from the highest priority lv
-	for (unsigned int i = MAX_NUM_OF_LEVEL-1; ; i--) //condition of for-loop is left intentionally
+	for (unsigned int i = MAX_NUM_OF_LEVEL - 1; ; i--) //condition of for-loop is left intentionally
 	{
 		if (head_MultilevelQ[i] != nullptr) // if(MultilevelQ is NOT empty - as checked above). This if condition must be met
 		{
@@ -78,29 +81,23 @@ T PriorityQ<T>::dequeue() {
 template <typename T>
 bool PriorityQ<T>::is_MultilevelQ_empty() {
 	//check through every level if each Q is empty (empty == nulltr)
-	for (unsigned int i = 0; head_MultilevelQ[i] != nullptr; i++)
-		return true;
-	//else
-	return false;
-}
+	for (int i = 0; i < MAX_NUM_OF_LEVEL; i++)
+	{
+		if (head_MultilevelQ[i] != nullptr) {
+			return false;
+		}
+	}
+	return true;
 
-template <typename T>
-bool PriorityQ<T>::is_levelQ_empty(int lv) {
-	if (lv < 1 || lv > 10)
-		throw out_of_range("Priority lv must be between [1, 10]");
-
-	Node<T>* temp_head_lv = head_MultilevelQ[lv - 1];
-	if (temp_head_lv == nullptr)
-		return true;
-	else
-		return false;
 }
 
 
-template <typename T>
-T PriorityQ<T>::peek() const {
 
-	if (is_MultilevelQ_empty()) 
+
+template <typename T>
+T PriorityQ<T>::peek()  {
+
+	if (is_MultilevelQ_empty())
 		throw runtime_error("Queue is empty");
 
 	//check from the highest priority lv
@@ -128,25 +125,26 @@ PriorityQ<T>& PriorityQ<T>::operator= (const PriorityQ<T>& anotherQ)
 }
 
 template <typename T>
-PriorityQ<T>& PriorityQ<T>::operator= (const PriorityQ<T>&& anotherQ)
+PriorityQ<T>& PriorityQ<T>::operator= (PriorityQ<T>&& anotherQ)
 {
 	clear();
 	for (unsigned int i = 0; i < MAX_NUM_OF_LEVEL; i++)
 	{
-		head_MultilevelQ[i]=anotherQ.head_MultilevelQ[i];
-		tail_MultilevelQ[i]=anotherQ.tail_MultilevelQ[i];
-		
-		anotherQ.head_MultilevelQ[i]=anotherQ.tail_Multilevel[i]=nullptr;
+		head_MultilevelQ[i] = anotherQ.head_MultilevelQ[i];
+		tail_MultilevelQ[i] = anotherQ.tail_MultilevelQ[i];
+
+		anotherQ.head_MultilevelQ[i] = nullptr;
+		anotherQ.tail_MultilevelQ[i] = nullptr;
 	}
 	return *this;
-	
+
 }
 
 template <typename T>
-static Node<T> copy(Node<T>* head, Node<T>*& tail)
+Node<T>* PriorityQ<T>::copy(Node<T>* head, Node<T>* tail)
 {
 	// if (queue is empty)
-	if(head == nullptr)
+	if (head == nullptr)
 	{
 		tail = nullptr;
 		return nullptr;
@@ -155,31 +153,31 @@ static Node<T> copy(Node<T>* head, Node<T>*& tail)
 	Node<T>* temp_newNode = new Node<T>(head->element);
 
 	// if (queue has exactly one element)
-	if(head->next == nullptr)
+	if (head->next == nullptr)
 	{
 		tail = temp_newNode;
-		return temp_newNode; 
+		return temp_newNode;
 	}
 
 	temp_newNode->next = copy(head->next, tail);
 	return temp_newNode;
 }
 
+
 template <typename T>
 void PriorityQ<T>::clear()
 {
 	for (int i = 0; i < MAX_NUM_OF_LEVEL; i++)
 	{
+		
 		Node<T>* temp_head = head_MultilevelQ[i];
-		while(head_MultilevelQ[i] != nullptr)
+		while (temp_head != nullptr)
 		{
-			Node<T>* temp = temp_head->next; 
+			Node<T>* temp = temp_head->next;
 			delete temp_head;
 			temp_head = temp;
-		
+			
 			tail_MultilevelQ[i] = nullptr;
 		}
 	}
 }
-
-
