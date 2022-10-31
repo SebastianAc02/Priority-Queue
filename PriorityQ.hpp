@@ -56,6 +56,8 @@ public:
 	void clear();
 
 
+	Node<T>* head_MultilevelQ[10];
+	Node<T>* tail_MultilevelQ[10];
 
 
 private:
